@@ -1,4 +1,4 @@
-package hello.servlet;
+package hello.servlet.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -22,7 +22,7 @@ public class FrontControllerServletV1 extends HttpServlet {
     public FrontControllerServletV1(){
         controllermap.put("/front-controller/v1/members/new-form",new MemberFormControllerV1());
         controllermap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
-        controllermap.put("/front-controller/v1/members/members", new MemberListControllerV1());
+        controllermap.put("/front-controller/v1/members", new MemberListControllerV1());
     }
 
     @Override

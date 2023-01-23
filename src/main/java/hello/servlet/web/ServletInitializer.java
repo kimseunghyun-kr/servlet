@@ -1,5 +1,6 @@
-package hello.servlet;
+package hello.servlet.web;
 
+import hello.servlet.web.ServletApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

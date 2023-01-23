@@ -2,9 +2,9 @@ package hello.servlet.web.frontcontroller.v3;
 
 import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.MyView;
-import hello.servlet.web.frontcontroller.v3.Controller.MemberFormControllerV3;
-import hello.servlet.web.frontcontroller.v3.Controller.MemberListControllerV3;
-import hello.servlet.web.frontcontroller.v3.Controller.MemberSaveControllerV3;
+import hello.servlet.web.frontcontroller.v3.controller.MemberFormControllerV3;
+import hello.servlet.web.frontcontroller.v3.controller.MemberListControllerV3;
+import hello.servlet.web.frontcontroller.v3.controller.MemberSaveControllerV3;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -23,7 +23,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     public FrontControllerServletV3(){
         controllermap.put("/front-controller/v3/members/new-form",new MemberFormControllerV3());
         controllermap.put("/front-controller/v3/members/save", new MemberSaveControllerV3());
-        controllermap.put("/front-controller/v3/members/members", new MemberListControllerV3());
+        controllermap.put("/front-controller/v3/members", new MemberListControllerV3());
     }
 
     @Override
